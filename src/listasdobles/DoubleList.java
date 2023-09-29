@@ -81,7 +81,7 @@ public class DoubleList<t> {
             return null;
         } else {
             DoubleNode<t> temp = tail;
-            tail = temp.getNext();
+            tail = temp.getPrev();
             tail.setNext(null);
             temp.setPrev(null);
             size--;
